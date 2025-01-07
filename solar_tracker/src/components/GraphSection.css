@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+.mainContainer {
+    text-align: center;
+    background-color: #0b1c2c;
+    color: #fff;
+    padding: 20px;
+    font-family: Poppins;
+    justify-items: center;
+  }
+  .mainGraphtextContainer{
+    height: 60%;
+    width:72%;
+    /* background-color: #17a065; */
+    display: flex;
+
+  }
+  
+  .mainGraphtext {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color:  #0b1c2c;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    border-radius: 39px;
+   
+    background: linear-gradient(145deg, #0a1928, #0c1e2f);
+    box-shadow:  14px 14px 18px #08141f,
+             -14px -14px 18px #0e2439;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card.selected {
+    background-color: #1a2b3c; /* Light blue color when selected */
+  }
+  
+  .getStarted {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1dc378;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .getStarted:hover {
+    background-color: #17a065;
+  }
+  
+  /* White container at the bottom */
+  .bottomWhiteContainer {
+    background-color: #ffffff; /* White background */
+    color: #0b1c2c; /* Dark blue text */
+    padding: 30px;
+    border-radius: 20px; /* Curved corners */
+    margin: 40px 70px;
+    box-shadow: 
+      0px 15px 35px rgba(0, 0, 0, 0.3),  /* Stronger shadow for depth */
+      0px 20px 50px rgba(0, 0, 0, 0.2); /* Softer secondary shadow */
+    text-align: left;
+  }
+  
+  
+  
+  /* Heading and paragraph styles */
+  .bottomWhiteContainer h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .bottomWhiteContainer p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  
+  /* Statistics row */
+  .statsRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Responsive layout */
+    gap: 20px;
+  }
+  
+  /* Individual stat box */
+  .statBox {
+    background-color: #f9fafb; /* Slightly off-white */
+    border-radius: 39px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  14px 14px 18px #9d9d9d,
+                 -14px -14px 18px #ffffff;
+    text-align: center;
+    padding: 15px;
+    flex: 1;
+    min-width: 200px; /* Minimum width for responsiveness */
+    transition: transform 0.2s ease;
+  }
+  
+  .statBox h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0b1c2c;
+    margin-bottom: 10px;
+  }
+  
+  .statBox p {
+    font-size: 0.9rem;
+    color: #606c79;
+  }
+  
+  /* Highlighted stat box */
+  .statBox.highlighted {
+    background-color: #0b1c2c; /* Dark blue for highlighted */
+    color: #ffffff; /* White text */
+    transform: scale(1.05); /* Slightly larger */
+  }
+  
+  /* Stat box hover effect */
+  .statBox:hover {
+    transform: translateY(-5px); /* Lift effect */
+  }
+  

@@ -1,0 +1,101 @@
+/* Main container for the section */
+.stats-section {
+    background-color: #0b1c2c; /* Dark blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 50px 20px;
+    font-family: 'Poppins', sans-serif;
+    position: relative; /* To position the gradient */
+    overflow: hidden; /* To ensure gradient doesn't affect other elements */
+}
+
+/* Radial gradient styling */
+.stats-section::before {
+    content: "";
+    position: absolute;
+    top: -250px; /* Adjust to control how much of the gradient is shown */
+    right: -200px; /* Adjust to control position */
+    width: 450px; /* Size of the radial gradient */
+    height: 450px; /* Size of the radial gradient */
+    background: radial-gradient(circle, rgba(105, 151, 186, 0.349) 0%,rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1; /* Ensure it is behind the content */
+    pointer-events: none; /* Prevent the gradient from blocking interactions */
+}
+
+/* Hero text styling */
+.hero-text {
+    position: relative;
+    z-index: 2; /* Keep text above the gradient */
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #c2c6d1;
+    background: linear-gradient(to bottom, rgba(26, 31, 43, 1), rgba(255, 255, 255, 1), rgba(194, 198, 209, 1), rgba(26, 31, 43, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text h1 span {
+    font-weight: 700;
+    background: linear-gradient(to bottom, rgba(26, 31, 43, 1), rgba(255, 255, 255, 1), rgba(194, 198, 209, 1), rgba(26, 31, 43, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Stats container */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Responsive: Wrap on smaller screens */
+    margin-top: 20px;
+    position: relative;
+    z-index: 2; /* Keep stats above the gradient */
+}
+
+/* Individual stat box */
+.stat {
+    text-align: center;
+    position: relative;
+    padding: 0 20px; /* Space around each stat */
+}
+
+.stat::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px; /* Divider position */
+    height: 100%;
+    width: 1px;
+    background-color: #c2c6d1; /* Divider color */
+}
+
+.stat:last-child::after {
+    display: none; /* Remove divider after last stat */
+}
+
+.stat h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.stat h2 span {
+    font-size: 1.5rem; /* Smaller "+" symbol */
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+
+.stat p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #c2c6d1;
+}

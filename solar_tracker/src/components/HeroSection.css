@@ -1,0 +1,58 @@
+/* Hero section container */
+.mainSolarImagediv {
+    width: 100%; /* Full window width */
+    height: 100%; /* Full window height */
+    overflow: hidden; /* Hide any overflow from the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.mainSolarImage {
+    width: 100%; /* Scale the width to fit the window */
+    height: 100%; /* Scale the height to fit the window */
+    object-fit: cover; /* Ensures the image fills the container without stretching */
+}
+/* Hero section container */
+.mainSolarImagediv {
+    position: relative; /* To position the overlay text relative to this container */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.mainSolarImage {
+    width: 100%; /* Fit the width of the container */
+    height: 100%; /* Fit the height of the container */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
+/* Overlay text styling */
+.heroText {
+    position: absolute; /* Position on top of the image */
+    top: 25%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: #1a1f2b; /* Text color */
+    text-align: center; /* Center-align the text */
+    z-index: 10; /* Ensure it appears above the image */
+    font-family: 'Poppins', sans-serif; /* Font styling */
+}
+
+.heroText h1 {
+    font-size: 3rem; /* Main heading size */
+    font-weight: 700;
+    margin: 0;
+}
+
+.heroText p {
+    font-size: 1.2rem; /* Subheading size */
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+
