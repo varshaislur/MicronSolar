@@ -1,8 +1,11 @@
 /* Main container for the section */
 .stats-section {
+    height: 100vh;
+    width: 100vw;
     background-color: #0b1c2c; /* Dark blue background */
     color: #ffffff; /* White text */
     text-align: center;
+    justify-content: center;
     padding: 50px 20px;
     font-family: 'Poppins', sans-serif;
     position: relative; /* To position the gradient */
@@ -98,4 +101,8 @@
     font-weight: 300;
     margin-top: 10px;
     color: #c2c6d1;
+}
+.space{
+    height:20px;
+    
 }

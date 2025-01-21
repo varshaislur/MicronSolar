@@ -14,6 +14,10 @@ const StatsSection = () => {
           solar trackers.
         </h1>
       </div>
+      <div className="space">
+        
+
+      </div>
 
       {/* Statistics */}
       <div className="stats-container">

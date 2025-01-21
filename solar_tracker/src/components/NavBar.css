@@ -10,9 +10,8 @@
     padding: 10px 20px;
     background-color: #0b1c2c;
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-   
-
-  }
+    margin:0px;
+   }
 
   
   /* Logo section */
@@ -82,7 +81,8 @@ box-shadow:  14px 14px 18px #050d15,
 }
 
 .get-started-button:hover {
-    background-color: #898585;
+    background-color: #0f7564;
+    color:white;
 }
 
 /* Active link styling */

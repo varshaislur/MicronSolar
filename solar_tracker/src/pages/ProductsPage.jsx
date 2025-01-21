@@ -1,8 +1,13 @@
 import React from 'react'
+import ProductMainComponent from '../components/ProductMainComponent'
+import CustomerReview from '../components/CustomerReview'
 
 const ProductsPage = () => {
   return (
-    <div>ProductsPage</div>
+    <div>
+      <ProductMainComponent/>
+      <CustomerReview/>
+    </div>
   )
 }
 
