@@ -3,9 +3,9 @@ import "./VideoTutorials.css";
 
 const VideoSection = () => {
   const content = [
-    { id: 1, type: "video", src: "https://youtube.com/embed/PbU5_B9QIZA", description: "Video description for video 1" },
-    { id: 2, type: "video", src: "https://www.youtube.com/embed/t6yAfTz_GwY", description: "Video description for video 2" },
-    { id: 3, type: "video", src: "https://www.youtube.com/embed/5ssCoT7FEiM", description: "Video description for video 3" },
+    { id: 1, type: "video", src: "https://youtube.com/embed/PbU5_B9QIZA", description: "Learn how to install a solar tracker system step by step! This video covers everything from mounting the tracker to wiring the system for maximum efficiency. Whether you're setting up a single-axis or dual-axis tracker, this guide ensures a smooth installation." },
+    { id: 2, type: "video", src: "https://www.youtube.com/embed/t6yAfTz_GwY", description: "Want to improve your solar panel efficiency? This DIY solar tracker installation tutorial walks you through the process, making it easy for homeowners and businesses to install and optimize their solar power systems." },
+    { id: 3, type: "video", src: "https://www.youtube.com/embed/5ssCoT7FEiM", description: "See a real-world solar tracker installation in action! This field demonstration follows a professional team as they install a large-scale solar tracking system, explaining the process along the way." },
   ];
 
   return (

@@ -8,10 +8,10 @@ const GraphSection = () => {
   const [highlightedCard, setHighlightedCard] = useState(null);
 
   const stats = [
-    { id: 1, value: "$24,8k", label: "Total Utilization Rate" },
-    { id: 2, value: "$14,4k", label: "Maintenance Costs" },
-    { id: 3, value: "$12,3k", label: "Electricity Bills" },
-    { id: 4, value: "$8,8k", label: "Carbon Reduction" },
+    { id: 1, value: "₹22.8k", label: "Total Utilization Rate (with Solar Tracker)" },
+    { id: 2, value: "₹12.4k", label: "Maintenance Costs (Optimized with Advanced Trackers)" },
+    { id: 3, value: "₹10.7k", label: "Reduced Electricity Bills" },
+    { id: 4, value: "₹8.9k", label: "Higher Carbon Reduction" },
   ];
 
   const cards = [
