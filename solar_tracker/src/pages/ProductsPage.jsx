@@ -1,14 +1,16 @@
-import React from 'react'
-import ProductMainComponent from '../components/ProductMainComponent'
-import CustomerReview from '../components/CustomerReview'
+import React from "react";
+import ProductMainComponent from "../components/ProductMainComponent";
+import CustomerReview from "../components/CustomerReview";
+import VideoSection from "../components/VideoTutorials";
 
 const ProductsPage = () => {
   return (
     <div>
-      <ProductMainComponent/>
-      <CustomerReview/>
+      <ProductMainComponent />
+      <VideoSection />
+      <CustomerReview />
     </div>
-  )
-}
+  );
+};
 
-export default ProductsPage
+export default ProductsPage;

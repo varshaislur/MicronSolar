@@ -1,0 +1,47 @@
+.blueContainer {
+    width:100vw;
+    height:100vh;
+    text-align: center;
+    background-color: #0b1c2c;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .mainGraphtextContainer {
+    display: flex;
+    width: 72%;
+    margin: 0 auto;
+  }
+  
+  .mainGraphtext {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    /* Card styles remain the same */
+    background-color: #0b1c2c;
+    padding: 20px;
+    width: 300px;
+    border-radius: 39px;
+    background: linear-gradient(145deg, #0a1928, #0c1e2f);
+    box-shadow: 14px 14px 18px #08141f, -14px -14px 18px #0e2439;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card.selected {
+    background-color: #1a2b3c;
+  }
+  

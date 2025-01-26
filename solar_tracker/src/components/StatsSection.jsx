@@ -4,6 +4,9 @@ import "./StatsSection.css";
 const StatsSection = () => {
   return (
     <div className="stats-section">
+       <div class="blob-inner-container">
+       <div class="blob"></div>
+       </div>
       {/* Hero Text */}
       <div className="hero-text">
         <h1>
@@ -15,7 +18,7 @@ const StatsSection = () => {
         </h1>
       </div>
       <div className="space">
-        
+
 
       </div>
 

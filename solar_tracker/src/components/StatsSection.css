@@ -58,7 +58,9 @@
     margin-top: 20px;
     position: relative;
     z-index: 2; /* Keep stats above the gradient */
+    
 }
+
 
 /* Individual stat box */
 .stat {
