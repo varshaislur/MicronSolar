@@ -1,56 +1,58 @@
 .customer-review-outer {
-  background-color: #0b1c2c; /* Dark background */
-  padding: 50px 0;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  background-color: #081624;
 }
 
 .customer-review-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  color: white; /* Text color for contrast */
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.customer-review-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.review-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.customer-review-container p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
+.review-track {
+  display: flex;
+  gap: 20px; /* Spacing between cards */
+  animation: scroll 20s linear infinite;
 }
 
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll halfway through the content */
+  }
 }
 
 .review-card {
-  background-color: #1a2a3a; /* Darker card background */
-  border-radius: 15px;
-  padding: 20px;
-  color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.review-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  flex: 0 0 300px; /* Fixed width for consistent layout */
+  background-color: #0b1c2c;
+  border: solid grey 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .review-header {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .profile-pic {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  margin-right: 15px;
+  object-fit: cover;
 }
 
 .review-card h3 {
@@ -60,16 +62,32 @@
 
 .role {
   font-size: 0.9rem;
-  color: #d0d0d0; /* Subtle gray */
+  color: rgb(196, 194, 194);
+  margin: 0;
 }
 
 .date {
   font-size: 0.8rem;
-  color: #a0a0a0;
+  color: #999;
+  margin: 0;
 }
 
 .review-text {
   font-size: 1rem;
-  font-style: italic;
-  margin-top: 10px;
+  color: #d5d3d3;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .review-card {
+    flex: 0 0 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    flex: 0 0 200px;
+  }
 }

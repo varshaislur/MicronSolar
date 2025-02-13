@@ -10,6 +10,7 @@ import FAQPage from './pages/FAQPage';
 
 function App() {
   return (
+      <div className='App'>
     <Router>
       <NavBar />
       <Routes>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/FAQs" element={<FAQPage/>}/>
       </Routes>
     </Router>
+    </div>
   );
 }
 

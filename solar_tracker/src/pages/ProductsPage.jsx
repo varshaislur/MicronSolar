@@ -5,7 +5,7 @@ import VideoSection from "../components/VideoTutorials";
 
 const ProductsPage = () => {
   return (
-    <div>
+    <div >
       <ProductMainComponent />
       <VideoSection />
       <CustomerReview />

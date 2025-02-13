@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./VideoTutorials.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const VideoSection = () => {
+  useEffect(() => {
+          AOS.init({
+            duration: 1000, // Animation duration in ms
+            easing: "ease-in-out", // Easing for animations
+            once: false, // Allow animation to trigger every time it enters the viewport
+            mirror: true, // Reverse the animation when the element leaves the viewport
+            
+          });
+          AOS.refresh();
+        }, []);
   const content = [
     { id: 1, type: "video", src: "https://youtube.com/embed/PbU5_B9QIZA", description: "Learn how to install a solar tracker system step by step! This video covers everything from mounting the tracker to wiring the system for maximum efficiency. Whether you're setting up a single-axis or dual-axis tracker, this guide ensures a smooth installation." },
     { id: 2, type: "video", src: "https://www.youtube.com/embed/t6yAfTz_GwY", description: "Want to improve your solar panel efficiency? This DIY solar tracker installation tutorial walks you through the process, making it easy for homeowners and businesses to install and optimize their solar power systems." },
@@ -9,11 +21,11 @@ const VideoSection = () => {
   ];
 
   return (
-    <div className="video-section">
+    <div className="video-section" >
       <h2 className="video-section-title">Explore Our Video Content</h2>
       <div className="video-container">
         {content.map((item) => (
-          <div key={item.id} className="video-block">
+          <div key={item.id} className="video-block" data-aos="fade-right">
             <iframe
               src={item.src}
               title={`Video ${item.id}`}

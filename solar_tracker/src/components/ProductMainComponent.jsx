@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ProductMainComponent.css';
 import Tilt from 'react-parallax-tilt';
 import product1 from '../assets/solarProduct1.jpg'
 import product2 from '../assets/solarProduct2.jpg'
 import product3 from '../assets/solarProduct3.jpg'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ProductMainComponent = () => {
+   useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration in ms
+          easing: "ease-in-out", // Easing for animations
+          once: false, // Allow animation to trigger every time it enters the viewport
+          mirror: true, // Reverse the animation when the element leaves the viewport
+          
+        });
+        AOS.refresh();
+      }, []);
   return (
  
-    <div className="product-steps">
+    <div className="product-steps" >
       <h2 className="title">Maximize your returns with our Products</h2>
       <div className="steps-container">
         {/* Step 1 */}
       <Tilt>
-        <div className="step">
+        <div className="step" data-aos="flip-left">
           <img 
             src={product1}
             alt="Product 1" 
@@ -29,7 +41,7 @@ const ProductMainComponent = () => {
 
         {/* Step 2 */}
         <Tilt>
-        <div className="step">
+        <div className="step" data-aos="flip-left">
           <img 
             src={product2}
             alt="Product 2" 
@@ -45,7 +57,7 @@ const ProductMainComponent = () => {
 
         {/* Step 3 */}
         <Tilt>
-        <div className="step">
+        <div className="step" data-aos="flip-right">
           <img 
             src={product3}
             alt="Product 3" 
