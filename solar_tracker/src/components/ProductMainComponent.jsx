@@ -32,9 +32,10 @@ const ProductMainComponent = () => {
             className="step-image" 
           />
           <h3 className="step-number">1</h3>
-          <h4 className="step-title">Solar Energy Solutions</h4>
+          <h4 className="step-title">Automatic tracking</h4>
           <p className="step-description">
-            Explore innovative solar panel systems designed for maximum efficiency and sustainability.
+          Real-time adjustments to align with the sun's movement.
+          Solar panel systems designed for maximum efficiency and sustainability.
           </p>
         </div>
         </Tilt>
@@ -48,9 +49,12 @@ const ProductMainComponent = () => {
             className="step-image" 
           />
           <h3 className="step-number">2</h3>
-          <h4 className="step-title">Wind Energy Solutions</h4>
+          <h4 className="step-title">Inbuilt inclinometer</h4>
           <p className="step-description">
-            Discover advanced wind energy systems that drive clean energy for your business.
+          Precise measurement of angles for accurate tracking.
+          Seamless movement through actuators or VFD-controlled motors.
+
+
           </p>
         </div>
         </Tilt>
@@ -64,9 +68,11 @@ const ProductMainComponent = () => {
             className="step-image" 
           />
           <h3 className="step-number">3</h3>
-          <h4 className="step-title">Energy Storage</h4>
+          <h4 className="step-title">RS485 communication port</h4>
           <p className="step-description">
-            Store your energy efficiently with cutting-edge storage technologies for a sustainable future.
+          Enables integration and monitoring in advanced systems.
+          Clear indicators for forward, reverse, and error states.
+
           </p>
         </div>
         </Tilt>

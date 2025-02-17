@@ -17,21 +17,21 @@ const GraphSection = () => {
   const cards = [
     {
       id: 1,
-      title: "A Responsible Corporate",
+      title: "Increase Energy Output & Cost Savings",
       description:
-        "Save on your electricity bills, reduce your carbon footprint and increase the value of your home.",
+        "Businesses can generate up to 40% more solar energy, reducing electricity expenses and operational costs. A higher energy yield ensures better ROI on solar investments.",
     },
     {
       id: 2,
-      title: "Utility-Scale Solution",
+      title: "Enhance Corporate Sustainability",
       description:
-        "Own a solar power plant, procure solar contracts or offer solar directly to your customers with a solid business partner.",
+        "Adopting solar trackers showcases environmental responsibility, helping companies meet ESG (Environmental, Social, and Governance) goals while reducing their carbon footprint.",
     },
     {
       id: 3,
-      title: "Commercial Solution",
+      title: " Reliable & Scalable for Large-Scale Operations",
       description:
-        "Make the smart investment and choose solar for your business. Lock in energy rates, demonstrate corporate social responsibility.",
+        "Solar trackers provide consistent and optimized energy production, making them ideal for corporate offices, manufacturing units, and industrial solar farms.",
     },
   ];
 

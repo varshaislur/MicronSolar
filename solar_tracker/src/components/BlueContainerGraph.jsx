@@ -5,7 +5,7 @@ const BlueContainerGraph = ({ cards, selectedCard, setSelectedCard }) => {
   return (
     <div className="blueContainer">
       <div className="mainGraphtextContainer">
-        <h1 className="mainGraphtext">A Responsible Corporate Customers</h1>
+        <h1 className="mainGraphtext">Why Use a Solar Tracker?</h1>
       </div>
       <div className="cardsContainer">
         {cards.map((card) => (
