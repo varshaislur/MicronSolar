@@ -1,9 +1,4 @@
 /* General Styles */
-body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-  }
-  
   .contact-page {
     display: flex;
     flex-direction: column;
@@ -102,15 +97,21 @@ box-shadow:  14px 14px 18px #050d15,
     color: #777;
   }
   
-  /* Checkbox Group */
   .checkbox-group {
     display: flex;
     align-items: center;
-  }
+    gap: 8px; /* Adjust spacing */
+}
+
+.checkbox-group input[type="checkbox"] {
   
-  .checkbox-group input {
-    margin-right: 10px;
-  }
+    margin: 0;
+    margin-left: 35%; /* Remove default margin */
+    width: 16px; /* Adjust checkbox size if needed */
+    height: 16px;
+}
+
+  
   
   .privacy-link {
     color: #66b2ff;
@@ -137,6 +138,6 @@ box-shadow:  14px 14px 18px #050d15,
   }
   
   .submit-btn:hover {
-    background: linear-gradient(90deg, #5048d8, #28285a);
+    background: linear-gradient(90deg, #12a088, #0a5b4d);
   }
   

@@ -33,20 +33,20 @@ const StatsSection = () => {
       {/* Statistics */}
       <div className="stats-container">
         <div className="stat" data-aos="fade-up">
-          <h2>20K<span>+</span></h2>
+          <h2>100<span>+</span></h2>
           <p>Projects</p>
         </div>
         <div className="stat" data-aos="fade-up" data-aos-delay="100">
-          <h2>10Y<span>+</span></h2>
+          <h2>20Y<span>+</span></h2>
           <p>Experience</p>
         </div>
         <div className="stat" data-aos="fade-up" data-aos-delay="200">
-          <h2>100K<span>+</span></h2>
+          <h2>2K<span>+</span></h2>
           <p>Satisfied Clients</p>
         </div>
         <div className="stat" data-aos="fade-up" data-aos-delay="300">
-          <h2>90%<span>+</span></h2>
-          <p>Environmentally</p>
+          <h2>90%<span></span></h2>
+          <p>Environmentally Sustainable</p>
         </div>
       </div>
     </div>

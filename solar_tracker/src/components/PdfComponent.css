@@ -1,12 +1,29 @@
+.pdf-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    height: 50vh;
+}
+
+.pdf-title {
+    font-size: 40px;
+    font-weight: bold;
+     color: #fefefe;
+}
+.sub-title {
+    font-size: 20px;
+    font-weight: 200;
+    color: #fefefe;
+    margin-bottom: 30px;
+}
+
 .pdf-container {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
-    gap: 20px;
     padding: 20px;
     border: #949191 solid 1px;
-    width:80%;
-    margin: 10%;
+    width: 80%;
+    margin: 0 auto;
     border-radius: 20px;
 }
 
@@ -24,12 +41,12 @@
 
 .pdf-icon {
     font-size: 80px;
-    color: #949191;
+    color: #fff8f8;
     transition: color 0.3s ease;
 }
 
 .pdf-item:hover .pdf-icon {
-    color: #ffffff;
+    color: #0f7564;
 }
 
 .pdf-text {

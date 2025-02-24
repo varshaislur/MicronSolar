@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutPageFirst.css";
 import working1 from "../assets/workingPhoto1.jpg"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutPageFirst = () => {
+     useEffect(() => {
+            AOS.init({
+              duration: 1000, // Animation duration in ms
+              easing: "ease-in-out", // Easing for animations
+              once: false, // Allow animation to trigger every time it enters the viewport
+              mirror: true, // Reverse the animation when the element leaves the viewport
+              
+            });
+            AOS.refresh();
+          }, []);
     return (
         <div className="aboutContainer">
-            <div className="aboutus">
+            <div className="aboutus" data-aos="zoom-in">
                 {/* <h4 className="subtitle1">How It Started</h4> */}
 
                 <h1 className="title1">About us</h1>
@@ -24,10 +36,10 @@ const AboutPageFirst = () => {
             </div>
             
             <div className="pictureandstats">
-                <div className="picture">
+                <div className="picture" data-aos="zoom-in">
                     <img src={working1} alt="Mentor and student working together" />
                 </div>
-                <div className="stats">
+                <div className="stats" data-aos="zoom-in">
                     <div className="stat-item">
                         <h2>20</h2>
                         <p>Years Experience</p>
