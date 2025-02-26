@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import "./ContactPage.css";
 
 const ContactPage = () => {
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  console.log("Backend URL:", backendUrl);
+
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,7 +39,7 @@ const ContactPage = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/contact", {
+      const response = await fetch(`${backendUrl}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
