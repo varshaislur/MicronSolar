@@ -1,50 +1,106 @@
 .blueContainer {
-    width:100vw;
-    height:100vh;
-    text-align: center;
-    background-color: #0b1c2c;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .mainGraphtextContainer {
-    display: flex;
-  
-    width: 90%;
-    margin: 0 auto;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  text-align: center;
+  background-color: #0b1c2c;
+  color: #fff;
+  padding: 30px 20px;
+}
 
-    justify-content: center;
-  }
-  
+.mainGraphtextContainer {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.mainGraphtext {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: #0b1c2c;
+  padding: 30px;
+  width: 300px;
+  border-radius: 39px;
+  background: linear-gradient(145deg, #0a1928, #0c1e2f);
+  box-shadow: 14px 14px 18px #08141f, -14px -14px 18px #0e2439;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.selected {
+  background-color: #1a2b3c;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
   .mainGraphtext {
-    font-size: 3rem;
-    margin-bottom: 40px;
-    text-align: left;
+    font-size: 2.5rem;
   }
   
   .cardsContainer {
-    display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blueContainer {
+    padding: 20px 15px;
+  }
+  
+  .mainGraphtext {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
   
   .card {
-    /* Card styles remain the same */
-    background-color: #0b1c2c;
-    padding: 30px;
-    width: 300px;
-    border-radius: 39px;
-    background: linear-gradient(145deg, #0a1928, #0c1e2f);
-    box-shadow: 14px 14px 18px #08141f, -14px -14px 18px #0e2439;
-    cursor: pointer;
-    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainGraphtext {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
   }
   
-  .card:hover {
-    transform: translateY(-5px);
+  .card {
+    padding: 15px;
   }
   
-  .card.selected {
-    background-color: #1a2b3c;
+  .card h2 {
+    font-size: 1.2rem;
   }
   
+  .card p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,47 +1,95 @@
 .whiteContainer {
-    height: 95vh;
-    width: 85vw;
-    background-color: #ffffff;
-    color: #0b1c2c;
-    padding: 30px;
-    border-radius: 20px;
-    margin: 40px 70px;
-    box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3),
-      0px 20px 50px rgba(0, 0, 0, 0.2);
+  height: auto;
+  min-height: 75vh;
+  width: 85vw;
+  background-color: #ffffff;
+  color: #0b1c2c;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 40px 20px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.3),
+    0px 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.whiteContainer h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.whiteContainer p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.statBox {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 14px 14px 18px #9d9d9d, -14px -14px 18px #ffffff;
+  border-radius: 39px;
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.statBox.highlighted {
+  background-color: #0b1c2c;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .whiteContainer {
+    width: 90vw;
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whiteContainer {
+    width: 90vw;
+    margin: 20px 10px;
+    padding: 15px;
   }
   
   .whiteContainer h2 {
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .whiteContainer p {
-    font-size: 1rem;
-    margin-bottom: 30px;
+    font-size: 1.5rem;
   }
   
   .statsRow {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
   
   .statBox {
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
-    box-shadow: 14px 14px 18px #9d9d9d, -14px -14px 18px #ffffff;
-    border-radius: 39px;
-    padding: 15px;
-    text-align: center;
-    flex: 1;
-    min-width: 200px;
-    transition: transform 0.2s ease;
+    width: 100%;
+    min-width: unset;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whiteContainer {
+    width: 95vw;
+    margin: 15px 5px;
+    padding: 10px;
   }
   
-  .statBox.highlighted {
-    background-color: #0b1c2c;
-    color: #ffffff;
-    transform: scale(1.05);
+  .whiteContainer h2 {
+    font-size: 1.3rem;
   }
   
+  .whiteContainer p {
+    font-size: 0.9rem;
+  }
+}
